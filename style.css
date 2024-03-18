@@ -1,0 +1,131 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "roboto";
+}
+
+.container {
+  height: 900px;
+  background: url("image/baner.jpg") no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.fond {
+  height: 900px;
+  background: linear-gradient(#7a39db75, #2521f277);
+}
+.line {
+  background-color: white;
+  height: 300px;
+  position: relative;
+  bottom: 180px;
+  transform: skew(0deg, -5deg);
+  -webkit-transform: skew(0deg, -5deg);
+  -moz-transform: skew(0deg, -5deg);
+  -ms-transform: skew(0deg, -5deg);
+  -o-transform: skew(0deg, -5deg);
+}
+.contentFlex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  top: 20px;
+  padding: 0px 10px;
+}
+.logo {
+  color: #a0d334;
+  font-size: 28px;
+}
+.menu a {
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  padding: 15px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  text-decoration: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.menu a:hover {
+  background-color: white;
+  color: #20211f;
+}
+.infoscars {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+.infoscars span {
+  font-size: 60px;
+  color: #a0d334;
+}
+.infoscars p {
+  color: white;
+  margin-bottom: 59px;
+  text-transform: capitalize;
+  line-height: 40px;
+}
+.infoscars button {
+  padding: 18px 41px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border: none;
+  background: #a0d334;
+  color: white;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.bars {
+  cursor: pointer;
+  display: none;
+}
+.bars i {
+  color: white;
+  font-size: 35px;
+}
+/* RESPONSIVE CODE  */
+@media screen and (max-width: 595px) {
+  .bars {
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    top: 50px;
+    transform: translateX(-100%);
+    background-image: linear-gradient(#2929299a, #1c1c30af);
+    right: 0px;
+    display: flex;
+    transition: 0.5s;
+    gap: 9;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu a {
+    margin: 10px 0px;
+  }
+  .infoscars {
+    left: 20%;
+  }
+  .show {
+    transform: translateX(0%);
+    z-index: 1997;
+    transition: 0.5s;
+  }
+}
